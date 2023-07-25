@@ -34,22 +34,23 @@ module truth_table_case(
   wire c;
 
   // Declaração de variáveis:
-
+  
   reg s;
 
-
+  // Inicia a rotina sequencial:
+  
   always @(a or b or c)
-    begin
-      case({a,b,c})
-        3'b000    :    s = 0;
-        3'b001    :    s = 0;
-        3'b010    :    s = 1;  
-        3'b011    :    s = 1;
-        3'b100    :    s = 0;
-        3'b101    :    s = 0;
-        3'b110    :    s = 1;
-        3'b111    :    s = 0;
-      end case
+  begin
+    case({a,b,c})
+      3'b000    :    s = 0;
+      3'b001    :    s = 0;
+      3'b010    :    s = 1;  
+      3'b011    :    s = 1;
+      3'b100    :    s = 0;
+      3'b101    :    s = 0;
+      3'b110    :    s = 1;
+      3'b111    :    s = 0;
+    end case
   end
         
 end module
