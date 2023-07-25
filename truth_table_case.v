@@ -50,7 +50,7 @@ module truth_table_case(
       3'b101    :    s = 0;
       3'b110    :    s = 1;
       3'b111    :    s = 0;
-    end case
+    endcase
   end
         
 end module
